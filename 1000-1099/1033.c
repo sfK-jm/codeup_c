@@ -1,0 +1,12 @@
+// 10진수를 입력받아 16진수(hexadecimal)대문자로 출력해라
+
+#include <stdio.h>
+
+int main(void)
+{
+    int x;
+    scanf("%d", &x);
+    printf("%X", x);
+
+    return 0;
+}
