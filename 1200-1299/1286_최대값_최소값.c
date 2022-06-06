@@ -4,25 +4,19 @@
 
 int main()
 {
-    int num, min, max, temp;
-    min = 0;
-    max = 0;
-    temp = 0;
-    scanf("%d\n", &num);
-    min = num;
-    max = num;
-    for (int i = 1; i <= 4; i++)
+    int max = -1000000;
+    int min = 1000000;
+    int n, i;
+
+    for (i = 0; i < 5; i++)
     {
-        scanf("%d\n", &num);
-        if (min >= num)
-        {
-            min = num;
-        }
-        if (max <= num)
-        {
-            max = num;
-        }
+        scanf("%d", &n);
+        if (n > max)
+            max = n;
+        if (n < min)
+            min = n;
     }
+
     printf("%d\n%d", max, min);
     return 0;
 }
